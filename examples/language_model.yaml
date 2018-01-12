@@ -1,0 +1,16 @@
+vectorizer:
+    preprocessor: [halfwidth, lower]
+    tokenizer:
+      type: char_tokenizer
+    min_df: 1
+    keep_puncts: True
+    remove_non_ascii_cjk: False
+
+
+model:
+    embedding_size: 50
+    hidden_size: 100
+    num_layers: 2
+    dropout: 0.5
+    rnn_type: lstm
+
